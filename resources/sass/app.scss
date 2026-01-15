@@ -1,0 +1,201 @@
+// Google Fonts - Urbanist
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Custom Sleepy Panda Theme
+:root {
+    --sp-dark: #1a1f3c;
+    --sp-darker: #141831;
+    --sp-border: #2d3561;
+    --sp-teal: #2dd4bf;
+    --sp-teal-hover: #14b8a6;
+    --sp-text: #ffffff;
+    --sp-text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: var(--sp-darker);
+    color: var(--sp-text);
+    min-height: 100vh;
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: var(--sp-dark);
+    border: 2px solid var(--sp-text-muted);
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.auth-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--sp-text);
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    color: var(--sp-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    font-style: normal;
+}
+
+.form-group-custom {
+    background-color: var(--sp-darker);
+    border: 1px solid var(--sp-border);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group-custom.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-group-custom .form-icon {
+    color: var(--sp-text-muted);
+    font-size: 1.1rem;
+}
+
+.form-group-custom input {
+    background: transparent;
+    border: none;
+    color: var(--sp-text);
+    width: 100%;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.form-group-custom input::placeholder {
+    color: var(--sp-text-muted);
+}
+
+.form-group-custom input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--sp-darker) inset !important;
+    -webkit-text-fill-color: var(--sp-text) !important;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    color: var(--sp-teal);
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.forgot-link:hover {
+    color: var(--sp-teal-hover);
+    text-decoration: underline;
+}
+
+.btn-primary-custom {
+    background-color: var(--sp-teal);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sp-dark);
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover:not(:disabled) {
+    background-color: var(--sp-teal-hover);
+    color: var(--sp-dark);
+}
+
+.btn-primary-custom:disabled {
+    background-color: #5a6a7a;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.btn-secondary-custom {
+    background-color: transparent;
+    border: 2px solid var(--sp-text-muted);
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sp-text);
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--sp-text);
+    color: var(--sp-text);
+}
+
+.auth-footer {
+    margin-top: 20px;
+    color: var(--sp-text-muted);
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: var(--sp-teal);
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #f87171;
+    font-size: 0.85rem;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.alert-custom {
+    background-color: rgba(248, 113, 113, 0.1);
+    border: 1px solid #f87171;
+    color: #f87171;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert-success-custom {
+    background-color: rgba(45, 212, 191, 0.1);
+    border: 1px solid var(--sp-teal);
+    color: var(--sp-teal);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
